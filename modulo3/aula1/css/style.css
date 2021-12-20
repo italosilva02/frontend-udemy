@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(27, 26, 26);
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+.circulo {
+    width: 400px;
+    height: 400px;
+    border: 2px dotted rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    top: 29%;
+}
+
+.traco {
+    width: 50%;
+    height: 5px;
+    background-color: #e63946;
+    position: absolute;
+    top: 131px;
+    left: 60px;
+    transform: rotate(45deg);
+    animation: rotacao1 2s;
+}
+
+.traco1 {
+    width: 50%;
+    height: 5px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 131px;
+    left: 60px;
+    transform: rotate(
+-45deg);
+
+    animation: rotacao 2s;
+}
+
+
+.new{
+    width: 60%;
+    height: 60%;
+    border: 9px inset rgb(252, 252, 252);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 19%;
+    animation: rotacao2 2s;
+}
+
+h1 {
+    font-family: 'Staatliches', sans-serif;
+    color: #e63946;
+    font-size: 75px;
+    position: absolute;
+    right: 35%;
+    animation: texto 5s;
+}
+
+.texto {
+    color: #e63946;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 70px;
+    position: absolute;
+    left: 50px;
+    text-align: center;
+    top: 314px;
+    animation: texto 2s;
+}
+
+@keyframes texto {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes rotacao {
+    0% {
+        transform: rotate(-540deg);
+    }
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@keyframes rotacao1 {
+    0% {
+        transform: rotate(540deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes rotacao2 {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.item-texto:hover{
+    color: #ffffff;
+    cursor: pointer;
+    initial-value: 5;
+}
+
+@media (max-width: 600px)
+{
+    h1{
+        font-size: 36px;
+    }
+
+    .circulo{
+        width: 200px;
+        height: 200px;
+    }
+
+    .new{
+        left: 31px;
+    }
+
+    .traco{
+        top: 59px;
+        left: 31px;
+    }
+
+    .traco1{
+        top: 59px;
+        left: 31px;
+    }
+
+    .texto{
+        font-size: 40px;
+        
+    }
+}
