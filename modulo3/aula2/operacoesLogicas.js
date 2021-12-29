@@ -4,6 +4,17 @@
 || -> OR -> OU 
 ! -> NOT -> NÃO*/ 
 
+/*FALSY Values
+
+false
+0
+'' "" `` 
+null / undefined
+NaN
+*/ 
+
+/*Qualquer coisa diferente de Falsy value é considerado como true*/ 
+
 const expressao = false && false && false &&true && false;
 const expressao1 = false && false && false &&false && false;
 const expressao2 = false || false || false ||true || false;
